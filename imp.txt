@@ -1,0 +1,10 @@
+Block size -
+Physical size - 2kB so as to save wastage of blocks
+Logical size - 1 byte (Hence byte addressable)
+
+Size of superblock - 6 bytes
+1 byte each for magic number (file type),3 bytes for number of blocks, 1 for number of inode blocks,1 for n inodes each including 1 indirect pointer.
+
+bitmap - 1 bit for each physical block. Hence, 4 bytes required.
+
+n-ary trees for inodes in files
